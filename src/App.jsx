@@ -1,9 +1,14 @@
-import "./App.css";
-import MainPage from "./MainPage.jsx";
+import React from "react";
+import UserData from "./UserData";
 
 function App() {
-  return <MainPage />;
+  return (
+    <div>
+      <UserData />
+    </div>
+  );
 }
 
 export default App;
+
 
