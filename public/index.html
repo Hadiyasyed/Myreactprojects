@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tailwind Mini Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-50 text-gray-900">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+      <div class="text-xl font-bold">My Tailwind Page</div>
+      <ul class="flex flex-col sm:flex-row gap-3 sm:gap-6">
+        <li><a href="#hero" class="hover:text-blue-600">Home</a></li>
+        <li><a href="#features" class="hover:text-blue-600">Features</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero section -->
+  <section id="hero" class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-2 gap-8 items-center">
+    <!-- Responsive gradient heading + list -->
+    <div>
+      <h2 class="text-xl md:text-3xl lg:text-5xl font-extrabold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-4">
+        Level up with Tailwind
+      </h2>
+
+      <p class="mb-4">
+        Learn utility classes, responsive design, and interactive states using a compact practice page.
+      </p>
+
+      <!-- List styling -->
+      <ul class="list-disc list-inside pl-5 space-y-1">
+        <li class="hover:text-blue-600">Explore utility-first classes.</li>
+        <li class="hover:text-blue-600">Use hover, focus, and active states.</li>
+        <li class="hover:text-blue-600">Build responsive layouts with grid and flex.</li>
+        <li class="hover:text-blue-600">Create reusable cards and components.</li>
+      </ul>
+
+      <!-- Button with hover + active -->
+      <button
+        class="mt-6 px-5 py-2 rounded-md bg-gray-200 hover:bg-gray-300 active:bg-gray-400 transition-colors">
+        Get Started
+      </button>
+    </div>
+
+    <!-- Image with hover effect -->
+    <div class="flex justify-center md:justify-end">
+      <div class="rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+        <img
+          src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="People coding"
+          class="w-full h-64 object-cover"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Features: 3 cards in responsive grid -->
+  <section id="features" class="max-w-6xl mx-auto px-4 py-10">
+    <h3 class="text-2xl font-bold mb-6">Features</h3>
+
+    <!-- Grid of 3 cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-lg shadow-md p-5">
+        <img
+          src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Utility classes"
+          class="w-full h-32 object-cover rounded-md mb-3"
+        />
+        <h4 class="text-lg font-semibold mb-1">Utility Classes</h4>
+        <p class="text-sm mb-3">
+          Use single-purpose classes to style elements quickly without leaving HTML.
+        </p>
+        <button class="px-4 py-1 rounded-md bg-gray-200 hover:bg-gray-300 active:bg-gray-400 text-sm">
+          Learn more
+        </button>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-lg shadow-md p-5">
+        <img
+          src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Responsive layout"
+          class="w-full h-32 object-cover rounded-md mb-3"
+        />
+        <h4 class="text-lg font-semibold mb-1">Responsive Layouts</h4>
+        <p class="text-sm mb-3">
+          Build layouts that adapt from mobile to desktop using grid and flex utilities.
+        </p>
+        <button class="px-4 py-1 rounded-md bg-gray-200 hover:bg-gray-300 active:bg-gray-400 text-sm">
+          Learn more
+        </button>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-lg shadow-md p-5">
+        <img
+          src="https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Interactive states"
+          class="w-full h-32 object-cover rounded-md mb-3"
+        />
+        <h4 class="text-lg font-semibold mb-1">Interactive States</h4>
+        <p class="text-sm mb-3">
+          Add hover, focus, and active styles to make buttons and cards feel alive.
+        </p>
+        <button class="px-4 py-1 rounded-md bg-gray-200 hover:bg-gray-300 active:bg-gray-400 text-sm">
+          Learn more
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Table section -->
+  <section class="max-w-6xl mx-auto px-4 py-10">
+    <h3 class="text-2xl font-bold mb-4">Plan Overview</h3>
+
+    <div class="overflow-x-auto bg-white rounded-lg shadow-md">
+      <table class="min-w-full text-sm">
+        <thead>
+          <tr class="bg-gray-100">
+            <th class="border px-4 py-2 text-left">Plan</th>
+            <th class="border px-4 py-2 text-left">Duration</th>
+            <th class="border px-4 py-2 text-left">Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="odd:bg-white even:bg-gray-50 hover:bg-blue-50">
+            <td class="border px-4 py-2">Starter</td>
+            <td class="border px-4 py-2">1 week</td>
+            <td class="border px-4 py-2">Beginner</td>
+          </tr>
+          <tr class="odd:bg-white even:bg-gray-50 hover:bg-blue-50">
+            <td class="border px-4 py-2">Essentials</td>
+            <td class="border px-4 py-2">2 weeks</td>
+            <td class="border px-4 py-2">Intermediate</td>
+          </tr>
+          <tr class="odd:bg-white even:bg-gray-50 hover:bg-blue-50">
+            <td class="border px-4 py-2">Pro</td>
+            <td class="border px-4 py-2">1 month</td>
+            <td class="border px-4 py-2">Advanced</td>
+          </tr>
+          <tr class="odd:bg-white even:bg-gray-50 hover:bg-blue-50">
+            <td class="border px-4 py-2">Mastery</td>
+            <td class="border px-4 py-2">3 months</td>
+            <td class="border px-4 py-2">Expert</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Contact form -->
+  <section id="contact" class="max-w-6xl mx-auto px-4 py-10">
+    <h3 class="text-2xl font-bold mb-4">Contact Us</h3>
+
+    <form class="bg-white rounded-lg shadow-md p-6 space-y-4 max-w-md">
+      <div>
+        <label class="block text-sm mb-1" for="name">Name</label>
+        <input
+          id="name"
+          type="text"
+          class="w-full border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="Your name"
+        />
+      </div>
+
+      <div>
+        <label class="block text-sm mb-1" for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          class="w-full border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="you@example.com"
+        />
+      </div>
+
+      <div>
+        <label class="block text-sm mb-1" for="password">Password</label>
+        <input
+          id="password"
+          type="password"
+          class="w-full border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="********"
+        />
+      </div>
+
+      <button
+        type="submit"
+        class="w-full mt-2 px-4 py-2 rounded-md bg-gray-200 hover:bg-gray-300 active:bg-gray-400">
+        Submit
+      </button>
+    </form>
+  </section>
+</body>
+</html>
